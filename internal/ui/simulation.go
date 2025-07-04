@@ -23,6 +23,7 @@ type SimulationModel struct {
 	height     int
 	cellAges   [][]int
 	FocusMode  bool
+	speed      int
 }
 
 // NewSimulationModel creates a new SimulationModel for the specified automaton type
@@ -36,6 +37,7 @@ func NewSimulationModel(automatonType string) SimulationModel {
 		height:     0,
 		cellAges:   [][]int{},
 		FocusMode:  false,
+		speed:      8,
 	}
 }
 
@@ -47,9 +49,13 @@ func (m SimulationModel) Init() tea.Cmd {
 	)
 }
 
-// tick creates a command that ticks the simulation every 60 ms
+// tick creates adaptive frame rate based on user-controlled speed
 func (m SimulationModel) tick() tea.Cmd {
-	return tea.Tick(time.Millisecond*60, func(t time.Time) tea.Msg {
+	// Speed 1 = 200ms, Speed 10 = 20ms
+	baseInterval := 220 - (m.speed * 20) // Linear scaling
+	interval := time.Millisecond * time.Duration(baseInterval)
+
+	return tea.Tick(interval, func(t time.Time) tea.Msg {
 		return tickMsg(t)
 	})
 }
@@ -109,6 +115,18 @@ func (m SimulationModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		case "c":
 			// Toggle colorful mode
 			ToggleMonochromeMode()
+
+		case "up", "k":
+			// Increase speed
+			if m.speed < 10 {
+				m.speed++
+			}
+
+		case "down", "j":
+			// Decrease speed
+			if m.speed > 1 {
+				m.speed--
+			}
 
 		case "r":
 			// Reset
@@ -227,7 +245,7 @@ func (m SimulationModel) View() string {
 	// In normal mode, add status and help text
 
 	// status text
-	status := fmt.Sprintf("%s | Generation: %d | %s | Mode: %s",
+	status := fmt.Sprintf("%s | Generation: %d | %s | Mode: %s | Speed: %d/10",
 		m.automaton.Name(),
 		m.generation,
 		func() string {
@@ -236,12 +254,13 @@ func (m SimulationModel) View() string {
 			}
 			return "Paused"
 		}(),
-		modeText)
+		modeText,
+		m.speed)
 
 	statusBar := statusStyle.Width(m.width).Render(status)
 
 	// Help text
-	help := mutedHelpStyle.Width(m.width).Render("Space: pause/resume • S: step • R: reset • F: focus • C: colors • Q/Esc: back")
+	help := mutedHelpStyle.Width(m.width).Render("Space: pause/resume • ↑/↓: speed • S: step • R: reset • F: focus • C: colors • Q: back")
 
 	content := statusBar + "\n\n" + gridDisplay + "\n\n" + help
 	return content
