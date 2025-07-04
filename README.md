@@ -4,6 +4,12 @@
 Terminal-based cellular automata playground
 </p>
 
+| ![life](./assets/life.gif)       | ![brain](./assets/brain.gif)         |
+|----------------------------------|-------------------------------------|
+| ![ant](./assets/ant.gif)         | ![ltl](./assets/ltl.gif)             |
+| ![bz](./assets/bz.gif)           | ![faders](./assets/faders.gif)       |
+| ![forest](./assets/forest.gif)   | ![wildfire](./assets/wildfire.gif)   |
+
 ---
 
 ## Features
