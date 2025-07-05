@@ -6,6 +6,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var version = "dev"
+
 var (
 	monochromeFlag bool
 	focusFlag      bool
@@ -16,6 +18,7 @@ var rootCmd = &cobra.Command{
 	Short: "A terminal-based cellular automata playground",
 	Long: `Cellscape is a terminal application for exploring various cellular automata
 Navigate through a beautiful ASCII menu and watch automata come to life in your terminal`,
+	Version: version,
 	Run: func(cmd *cobra.Command, args []string) {
 
 		// Set modes if flags are provided
