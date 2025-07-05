@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"cellscape/internal/ui"
+	"github.com/ashish0kumar/cellscape/internal/ui"
 
 	"github.com/spf13/cobra"
 )

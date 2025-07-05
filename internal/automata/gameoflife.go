@@ -1,8 +1,9 @@
 package automata
 
 import (
-	"cellscape/internal/grid"
 	"math/rand"
+
+	"github.com/ashish0kumar/cellscape/internal/grid"
 )
 
 type GameOfLife struct{}

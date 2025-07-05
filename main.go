@@ -1,8 +1,9 @@
 package main
 
 import (
-	"cellscape/cmd"
 	"os"
+
+	"github.com/ashish0kumar/cellscape/cmd"
 )
 
 func main() {

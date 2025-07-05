@@ -1,4 +1,4 @@
-module cellscape
+module github.com/ashish0kumar/cellscape
 
 go 1.23.2
 

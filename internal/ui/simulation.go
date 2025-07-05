@@ -1,11 +1,12 @@
 package ui
 
 import (
-	"cellscape/internal/automata"
-	"cellscape/internal/grid"
 	"fmt"
 	"strings"
 	"time"
+
+	"github.com/ashish0kumar/cellscape/internal/automata"
+	"github.com/ashish0kumar/cellscape/internal/grid"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"

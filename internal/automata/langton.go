@@ -1,7 +1,7 @@
 package automata
 
 import (
-	"cellscape/internal/grid"
+	"github.com/ashish0kumar/cellscape/internal/grid"
 )
 
 // Direction represents the ant's facing direction

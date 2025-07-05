@@ -1,10 +1,11 @@
 package cmd
 
 import (
-	"cellscape/internal/ui"
 	"fmt"
 	"log"
 	"os"
+
+	"github.com/ashish0kumar/cellscape/internal/ui"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"

@@ -1,6 +1,6 @@
 package automata
 
-import "cellscape/internal/grid"
+import "github.com/ashish0kumar/cellscape/internal/grid"
 
 // Automaton defines the interface for all cellular automata
 type Automaton interface {
