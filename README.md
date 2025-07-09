@@ -6,20 +6,16 @@ Terminal-based cellular automata playground
 
 <table align="center">
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/e1550df3-c425-48a0-ada3-e231e4cac5b3" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/2870d84d-523a-46b8-b289-532ec4aac05d" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/e1550df3-c425-48a0-ada3-e231e4cac5b3" width="200"></td>
+    <td><img src="https://github.com/user-attachments/assets/2870d84d-523a-46b8-b289-532ec4aac05d" width="200"></td>
+    <td><img src="https://github.com/user-attachments/assets/92bdf10b-3bae-4b0f-85e4-0b16f9677bdf" width="200"></td>
+    <td><img src="https://github.com/user-attachments/assets/f3b38933-45b5-4166-9d43-91be7683a44e" width="200"></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/92bdf10b-3bae-4b0f-85e4-0b16f9677bdf" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/f3b38933-45b5-4166-9d43-91be7683a44e" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/671f3449-bfc1-4789-bbd3-f39894bb100d" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/31e2b66d-beac-4858-a73d-81ad1517e45d" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/445d9a5e-da8d-4358-9e89-1ea0f7194ec9" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/b7e8e77f-da08-43d4-80c3-961e0d00bd9b" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/671f3449-bfc1-4789-bbd3-f39894bb100d" width="200"></td>
+    <td><img src="https://github.com/user-attachments/assets/31e2b66d-beac-4858-a73d-81ad1517e45d" width="200"></td>
+    <td><img src="https://github.com/user-attachments/assets/445d9a5e-da8d-4358-9e89-1ea0f7194ec9" width="200"></td>
+    <td><img src="https://github.com/user-attachments/assets/b7e8e77f-da08-43d4-80c3-961e0d00bd9b" width="200"></td>
   </tr>
 </table>
 
@@ -128,6 +124,16 @@ cellscape run belousov --focus --monochrome
 
 Contributions are welcome! Please feel free to open an issue or submit a pull request.
 
-## License
+<br>
 
-[MIT License](LICENSE)
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
+
+<p align="center">
+        <i><code>&copy 2025-present <a href="https://github.com/ashish0kumar">Ashish Kumar</a></code></i>
+</p>
+
+<div align="center">
+<a href="https://github.com/ashish0kumar/cellscape/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ashish0kumar/cellscape?style=for-the-badge&color=CBA6F7&logoColor=cdd6f4&labelColor=302D41" alt="LICENSE"></a>&nbsp;&nbsp;
+</div>
